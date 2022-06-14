@@ -8,6 +8,8 @@
 <body>
 
 
+
+  <p>test</p>
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
@@ -68,6 +70,7 @@
   * @param {object} e - keydown event.
   */
   function playAudio(e) {
+    console.log(e);
     const audioSelect = document.querySelector(`audio[data-key='${e.keyCode}']`);
     if(audioSelect) {
       audioSelect.currentTime = 0;
